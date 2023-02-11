@@ -344,10 +344,11 @@ class UserActions:
         actions.user.idea("action EditorAddCaretPerSelectedLine")
 
     # splits tag functions
-    # def split_window_right():
-    #     actions.user.idea("action OpenInRightSplit")
+    def split_window_right():
+        actions.user.split_window_vertically()
     # def split_window_left():
-    # def split_window_down():
+    def split_window_down():
+        actions.user.split_window_horizontally()
     # def split_window_up():
     def split_window_vertically():
         actions.user.idea("action SplitVertically")
@@ -373,6 +374,6 @@ class UserActions:
 
     def split_next():
         actions.user.idea("action NextSplitter")
-
-    # def split_last():
+    def split_last():
+        actions.user.idea("action PrevSplitter")
     # def split_number(index: int):

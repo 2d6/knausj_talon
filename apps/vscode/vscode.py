@@ -27,7 +27,8 @@ and app.name: VSCodium
 os: linux
 and app.name: Codium
 os: linux
-and app.name: Cursor
+app: Electron
+and title: /Code - OSS/
 """
 mod.apps.vscode = r"""
 os: windows
@@ -52,6 +53,8 @@ and app.exe: azuredatastudio.exe
 
 ctx.matches = r"""
 app: vscode
+app: Electron
+and title: /Code - OSS/
 """
 mac_ctx.matches = r"""
 os: mac

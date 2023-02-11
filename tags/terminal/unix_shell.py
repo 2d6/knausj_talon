@@ -1,4 +1,4 @@
-from talon import Context, Module, actions
+from talon import app, Module, Context, actions, ui, imgui, settings, app, registry
 
 ctx = Context()
 mod = Module()
@@ -16,13 +16,11 @@ class Actions:
 
     def terminal_list_directories():
         """Lists directories"""
-        actions.insert("ls")
-        actions.key("enter")
-
+        actions.insert("ls ")
+        
     def terminal_list_all_directories():
         """Lists all directories including hidden"""
-        actions.insert("ls -a")
-        actions.key("enter")
+        actions.insert("ls -la ")
 
     def terminal_change_directory(path: str):
         """Lists change directory"""
@@ -37,8 +35,7 @@ class Actions:
 
     def terminal_clear_screen():
         """Clear screen"""
-        actions.insert("clear")
-        actions.key("enter")
+        actions.key("ctrl-l")
 
     def terminal_run_last():
         """Repeats the last command"""
@@ -49,8 +46,3 @@ class Actions:
         actions.key("ctrl-r")
         actions.insert(command)
 
-    def terminal_kill_all():
-        """kills the running command"""
-        actions.key("ctrl-c")
-        actions.insert("y")
-        actions.key("enter")

@@ -72,5 +72,5 @@ and app.exe: powershell.exe
 """
 
 apps.vim = """
-win.title:/VIM/
+win.title:/vim/
 """

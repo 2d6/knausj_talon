@@ -1,17 +1,20 @@
-# Requires https://plugins.jetbrains.com/plugin/10504-voice-code-idea
 app: jetbrains
 -
 tag(): user.line_commands
 tag(): user.multiple_cursors
 tag(): user.splits
 tag(): user.tabs
+
+settings():
+  key_wait = 5
+
 # multiple_cursors.py support end
 
 # Auto complete
 complete: user.idea("action CodeCompletion")
 perfect: user.idea("action CodeCompletion,action CodeCompletion")
 smart: user.idea("action SmartTypeCompletion")
-(done | finish): user.idea("action EditorCompleteStatement")
+finish: user.idea("action EditorCompleteStatement")
 # Copying
 grab <number>: user.idea_grab(number)
 # Actions
@@ -115,6 +118,7 @@ create file <user.text> [over]:
     user.idea("action NewElement")
     sleep(500ms)
     insert(text)
+create directory: user.idea("action NewDir")
 # Task Management
 go task: user.idea("action tasks.goto")
 go browser task: user.idea("action tasks.open.in.browser")
@@ -257,3 +261,20 @@ go camel right: user.camel_right()
 
 # requires plug-in: black-pycharm
 blacken: user.idea("action BLACKReformatCode")
+
+show in project: user.idea("action SelectInProjectView")
+find in path: user.idea("action FindInPath")
+replace in path: user.idea("action ReplaceInPath")
+
+compile project: user.idea("action CompileProject")
+
+project last: user.idea("action PreviousProjectWindow")
+project next: user.idea("action NextProjectWindow")
+
+redo that: key("ctrl-shift-z")
+
+squish: key("alt-enter")
+
+search recent projects [<user.text>]:
+    user.idea("action ManageRecentProjects")
+    "{text or ''}"

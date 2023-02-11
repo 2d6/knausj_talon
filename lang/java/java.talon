@@ -42,3 +42,8 @@ type {user.code_type} array:
 op array: user.code_operator_subscript()
 
 op new: insert("new ")
+
+annotate {user.java_annotation}:
+    insert("@{user.java_annotation}")
+
+java sucks: insert(";")

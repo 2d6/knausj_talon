@@ -1,5 +1,7 @@
 #custom vscode commands go here
 app: vscode
+app: Electron
+and title: /Code - OSS/
 -
 tag(): user.find_and_replace
 tag(): user.line_commands

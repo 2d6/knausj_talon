@@ -87,6 +87,15 @@ java_modifiers = {
 mod.list("java_modifier", desc="Java Modifiers")
 ctx.lists["self.java_modifier"] = java_modifiers
 
+java_annotations = {
+    "autowire": "Autowire",
+    "inject": "Inject",
+    "override": "Override",
+    "test": "Test",
+}
+
+mod.list("java_annotation", desc="Java Annotations")
+ctx.lists["self.java_annotation"] = java_annotations
 
 @ctx.action_class("user")
 class UserActions:

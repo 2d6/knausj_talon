@@ -9,13 +9,14 @@ os: linux
 @ctx.action_class("user")
 class Actions:
     def desktop(number: int):
-        ui.switch_workspace(number)
+        # ui.switch_workspace(number)
+        actions.key("super-" + str(number))
 
     def desktop_next():
-        actions.user.desktop(ui.active_workspace() + 1)
+        actions.key("super-pagedown")
 
     def desktop_last():
-        actions.user.desktop(ui.active_workspace() - 1)
+        actions.key("super-pageup")
 
     def desktop_show():
         actions.key("super")

@@ -34,6 +34,7 @@ scala_common_generic_types = {
     "deck": "Deque",
     "future": "Future",
     "list": "List",
+    "array": "Array",
     "map": "Map",
     "nil": "Nil",
     "option": "Option",

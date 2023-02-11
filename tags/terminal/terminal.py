@@ -28,3 +28,5 @@ class Actions:
 
     def terminal_kill_all():
         """kills the running command"""
+
+   

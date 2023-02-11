@@ -35,6 +35,12 @@ state raise: "raise "
 self taught: "self."
 pie test: "pytest"
 state past: "pass"
+state assert: "assert "
+state with:
+  insert("with :")
+  key("left")
+
+op returns: " -> "
 
 [state] raise {user.python_exception}:
     user.insert_between("raise {python_exception}(", ")")

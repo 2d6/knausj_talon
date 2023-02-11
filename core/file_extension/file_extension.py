@@ -14,7 +14,6 @@ _file_extensions_defaults = {
     "dot see": ".c",
     "dot see sharp": ".cs",
     "dot com": ".com",
-    "dot net": ".net",
     "dot org": ".org",
     "dot us": ".us",
     "dot U S": ".us",
