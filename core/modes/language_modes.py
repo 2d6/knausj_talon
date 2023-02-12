@@ -5,7 +5,7 @@ from talon import Context, Module, actions
 # commented out entries. TODO: make this a csv file?
 language_extensions = {
     # 'assembly': 'asm s',
-    # 'bash': 'bashbook sh',
+    'bash': 'sh',
     "batch": "bat",
     "c": "c h",
     # 'cmake': 'cmake',
