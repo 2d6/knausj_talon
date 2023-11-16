@@ -39,15 +39,8 @@ class Actions:
     def insert_html_tag(tag: str):
         """Inserts a new tag of a given type"""
 
-    def insert_closed_html_tag(tag: str):
-        """Inserts a new closed tag of a given type"""
-
-
 
 @ctx.action_class("user")
 class UserActions:
     def insert_html_tag(tag: str):
          actions.user.insert_between(f"<{tag}>", f"</{tag}>")
-
-    def insert_closed_html_tag(tag: str):
-        actions.insert(f"<{tag} />")
