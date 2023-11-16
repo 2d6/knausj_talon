@@ -1,5 +1,6 @@
 #custom vscode commands go here
 app: vscode
+app: code-oss
 app: Electron
 and title: /Code - OSS/
 -

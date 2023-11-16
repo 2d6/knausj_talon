@@ -133,7 +133,10 @@ class EditActions:
         actions.key("enter")
         actions.edit.line_start()
 
-    def zoom_reset():
+    def redo():
+        actions.user.vscode("redo")
+
+	def zoom_reset():
         actions.user.vscode("workbench.action.zoomReset")
 
 
