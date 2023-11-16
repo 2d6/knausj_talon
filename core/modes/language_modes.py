@@ -41,7 +41,7 @@ language_extensions = {
     "talonlist": "talon-list",
     "terraform": "tf",
     "tex": "tex",
-    "typescript": "ts",
+    "typescript": "ts vue",
     "typescriptreact": "tsx",
     # 'vba': 'vba',
     "vimscript": "vim vimrc",
