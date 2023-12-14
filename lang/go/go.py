@@ -3,7 +3,7 @@ from talon import Context, Module, actions, settings
 ctx = Context()
 mod = Module()
 ctx.matches = r"""
-tag: user.go
+code.language: go
 """
 
 ctx.lists["user.code_type"] = golang_common_types = {
