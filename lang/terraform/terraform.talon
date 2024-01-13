@@ -40,6 +40,3 @@ prop <user.terraform_common_property>:
 
 type {user.code_type}: insert("{code_type}")
 
-jump:
-    edit.word_right()
-    edit.word_right()

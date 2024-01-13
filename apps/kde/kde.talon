@@ -18,12 +18,6 @@ snap max: key("super-up")
 ^window move desk last: key("ctrl-alt-shift-left")
 ^window move desk next: key("ctrl-alt-shift-right")
 
-^computer: key("super-f")
-computer run <user.text>:
-  key("super-f")
-  sleep(250ms)
-  insert("{text}\n")
-
 computer end program: key("alt-f4")
 
 window next: key("alt-`")
