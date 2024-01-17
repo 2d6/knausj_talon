@@ -39,3 +39,6 @@ term zoom reset: key("ctrl-alt-0")
 term find: key("ctrl-shift-f")
 ^find up: key("f3")
 ^find down: key("shift-f3")
+
+clear all: key("ctrl-u")
+clear line: key("ctrl-u")
