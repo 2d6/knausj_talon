@@ -17,6 +17,12 @@ class EditActions:
     def delete_line():
         actions.key("ctrl-u")
 
+    def word_left():
+        actions.key("alt-left")
+
+    def word_right():
+        actions.key("alt-right")
+
 
 @ctx.action_class("user")
 class UserActions:

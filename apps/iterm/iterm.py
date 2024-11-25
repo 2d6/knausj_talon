@@ -18,10 +18,10 @@ directories_to_exclude = {}
 @ctx.action_class("edit")
 class EditActions:
     def line_start():
-        actions.key("home")
+        actions.key("ctrl-a")
 
     def line_end():
-        actions.key("end")
+        actions.key("ctrl-e")
 
 
 @ctx.action_class("user")

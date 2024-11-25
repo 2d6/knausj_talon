@@ -12,6 +12,7 @@ linux_ctx = Context()
 ctx.matches = r"""
 app: vscode
 app: code-oss
+app: vscodium
 """
 linux_ctx.matches = r"""
 os: linux
