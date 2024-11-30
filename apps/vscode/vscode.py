@@ -138,7 +138,7 @@ class EditActions:
     def redo():
         actions.user.vscode("redo")
 
-	def zoom_reset():
+    def zoom_reset():
         actions.user.vscode("workbench.action.zoomReset")
 
 
